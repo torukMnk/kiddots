@@ -1,6 +1,6 @@
 vim.api.nvim_command("set updatetime=1500")
 
-vim.g.mapleader = " "
+vim.g.mapleader = ","
 vim.g.maplocalleader = "\\"
 
 vim.opt.smarttab = true

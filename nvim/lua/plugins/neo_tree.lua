@@ -8,7 +8,7 @@ return {
     
   },
   keys = {
-    { "<leader>fe", "<cmd>Neotree toggle<cr>", desc = "NeoTree" },
+    { "<leader>n", "<cmd>Neotree toggle<cr>", desc = "NeoTree" },
   },
   config = function()
     require("neo-tree").setup({

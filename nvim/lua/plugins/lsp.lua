@@ -16,7 +16,8 @@ return {
         "gopls",
         "ruby_lsp",
         "rubocop",
-        "eslint",
+        "tsserver",
+        "eslint"
         "dockerls",
       }
     },
@@ -41,7 +42,6 @@ return {
           }
         }
       })
-
 
       vim.diagnostic.config({
         update_in_insert = false,

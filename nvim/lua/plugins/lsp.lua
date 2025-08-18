@@ -17,7 +17,12 @@ return {
         "ruby_lsp",
         "rubocop",
         "tsserver",
-        "eslint"
+        "eslint",
+        "stimulus_ls",
+        "ts_ls",
+        "eslint",
+        "astro",
+        "prismals",
         "dockerls",
       }
     },

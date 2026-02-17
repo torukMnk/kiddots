@@ -48,6 +48,25 @@ return {
         }
       })
 
+      vim.lsp.config('ts_ls', {
+        capabilities = capabilities,
+        cmd = {
+          "typescript-language-server",
+          "--stdio",
+          "--tsserver-path", "tsserver",
+          "--max-old-space-size=2048" -- Limits RAM to 2048MB
+        },
+        settings = {
+          typescript = {
+            tsserver = {
+              -- Prevents excessive indexing of non-essential files
+              maxTsServerMemory = 2048,
+            }
+          }
+        }
+      })
+
+
       vim.diagnostic.config({
         update_in_insert = false,
         virtual_text = {
@@ -65,10 +84,10 @@ return {
         })
       end
 
-      vim.keymap.set("n", "K", vim.lsp.buf.hover, {desc = "Hover definition"})
-      vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {desc = "Go to definition"})
-      vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {desc = "Show references"})
-      vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, {desc= "Format code"})
+      vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover definition" })
+      vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
+      vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, { desc = "Show references" })
+      vim.keymap.set("n", "<leader>gf", vim.lsp.buf.format, { desc = "Format code" })
       vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
       vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
 

@@ -41,7 +41,7 @@ return {
         },
       })
 
-      vim.cmd.colorscheme "catppuccin"
+      --vim.cmd.colorscheme "catppuccin"
     end,
   },
   {
@@ -66,22 +66,14 @@ return {
         invert_signs = false,
         invert_tabline = false,
         inverse = true, -- invert background for search, diffs, statuslines and errors
-        contrast = "", -- can be "hard", "soft" or empty string
+        contrast = "",  -- can be "hard", "soft" or empty string
         palette_overrides = {},
         overrides = {},
         dim_inactive = false,
         transparent_mode = false,
       })
 
-      vim.cmd.colorscheme "gruvbox"
-    end,
-  },
-  {
-    'akinsho/bufferline.nvim', 
-    version = "*", 
-    dependencies = 'nvim-tree/nvim-web-devicons',
-    config = function()
-      require("bufferline").setup({})
+      --vim.cmd.colorscheme "gruvbox"
     end,
   },
   {

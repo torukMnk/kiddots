@@ -41,7 +41,7 @@ https://github.com/cesargomez89/dotflakes/blob/main/nixos/configuration.nix#L116
 Install KIDD🌀TS with a single command:
 
 ```bash
-curl -s https://raw.githubusercontent.com/cesargomez89/kiddots/main/install.sh | bash
+curl -s https://raw.githubusercontent.com/torukMnk/kiddots/main/install.sh | bash
 ```
 
 ## 🌈 Key Features
@@ -121,7 +121,7 @@ We welcome contributions! To get involved:
 5. Submit a pull request
 
 ## 🔗 Project Links
-- **Source Code**: [GitHub Repository](https://github.com/cesargomez89/kiddots)
-- **Issues**: [GitHub Issues](https://github.com/cesargomez89/kiddots/issues)
+- **Source Code**: [GitHub Repository](https://github.com/torukMnk/kiddots)
+- **Issues**: [GitHub Issues](https://github.com/torukMnk/kiddots/issues)
 
 **Made with ❤️ by Developers, for Developers**

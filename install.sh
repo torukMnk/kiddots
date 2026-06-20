@@ -5,9 +5,9 @@ if [ -d ~/.dotfiles ]; then
   mv ~/.dotfiles ~/.dotfiles.bak
 fi
 
-# clone dotfiles https://github.com/cesargomez89/kiddots.git
+# clone dotfiles https://github.com/torukMnk/kiddots.git
 echo "Cloning dotfiles..."
-git clone https://github.com/cesargomez89/kiddots.git ~/.dotfiles
+git clone https://github.com/torukMnk/kiddots.git ~/.dotfiles
 # antidote
 echo "Installing antidote..."
 if [ -d ${ZDOTDIR:-~}/.antidote ]; then
